@@ -102,9 +102,10 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 alias vi="vim"
-alias p="~/Projects"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
+alias gh="~/GitHub"
+alias p="~/Projects"
 alias -s html=vi
 alias -s js=vi
 alias -s java=vi
