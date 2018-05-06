@@ -65,7 +65,6 @@ plugins=(
   docker
   git
   mvn
-  # sudo
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
@@ -101,11 +100,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# proxy
+alias -s html=vi
+alias -s js=vi
+alias -s java=vi
+alias -s txt=vi
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+
+alias dl="~/Downloads"
+alias dt="~/Desktop"
+
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
 alias unsetproxy="unset ALL_PROXY"
 alias ip="curl -i http://ip.cn"
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
