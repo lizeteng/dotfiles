@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliases
+alias vi="vim"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
 alias -s html=vi
