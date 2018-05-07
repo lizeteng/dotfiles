@@ -101,22 +101,24 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliases
-alias vi="vim"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
 alias gh="~/GitHub"
-alias p="~/Projects"
+alias ip="curl -i http://ip.cn"
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
+alias unsetproxy="unset ALL_PROXY"
+alias vi="vim"
 alias -s html=vi
 alias -s js=vi
 alias -s java=vi
+alias -s xml=vi
 alias -s log=vi
 alias -s txt=vi
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
-alias unsetproxy="unset ALL_PROXY"
-alias ip="curl -i http://ip.cn"
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
