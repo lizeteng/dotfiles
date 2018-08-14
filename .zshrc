@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MAVEN_HOME=/Users/lizeteng/apache/maven/apache-maven-3.5.0
 # export PATH=$PATH:$MAVEN_HOME/bin
@@ -9,7 +9,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="dracula"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -60,14 +61,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  autojump
-  docker
-  git
-  mvn
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-)
+plugins=(autojump docker docker-compose docker-machine git mvn zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,17 +101,6 @@ alias gh="~/GitHub"
 alias ip="curl -i http://ip.cn"
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
 alias unsetproxy="unset ALL_PROXY"
-alias vi="vim"
-alias -s html=vi
-alias -s js=vi
-alias -s java=vi
-alias -s xml=vi
-alias -s log=vi
-alias -s txt=vi
-alias -s gz='tar -xzvf'
-alias -s tgz='tar -xzvf'
-alias -s zip='unzip'
-alias -s bz2='tar -xjvf'
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
