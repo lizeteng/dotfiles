@@ -95,6 +95,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
+<<<<<<< HEAD
 nmap [b :bp<cr>
 nmap ]b :bn<cr>
 
@@ -108,6 +109,8 @@ map <leader>7 :b 7<cr>
 map <leader>8 :b 8<cr>
 map <leader>9 :b 9<cr>
 
+=======
+>>>>>>> 3c13eeda0cba067c0641303b148d12513800f905
 " => indent-guides
 
 let g:indent_guides_enable_on_vim_startup = 1
@@ -116,15 +119,23 @@ let g:indent_guides_guide_size = 1
 
 " => nerdtree
 
+<<<<<<< HEAD
+=======
+nmap <leader>t :NERDTreeToggle<cr>
+nmap <leader>T :NERDTreeFind<cr>
+>>>>>>> 3c13eeda0cba067c0641303b148d12513800f905
 let NERDTreeWinSize = 40
 let NERDTreeWinPos = 'left'
 let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeAutoDeleteBuffer = 1
 
+<<<<<<< HEAD
 nmap <leader>t :NERDTreeToggle<cr>
 nmap <leader>T :NERDTreeFind<cr>
 
+=======
+>>>>>>> 3c13eeda0cba067c0641303b148d12513800f905
 " => fzf
 
 nmap <silent> <leader>f :Files<cr>
