@@ -2,8 +2,8 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'tomasr/molokai'
 Plug 'joshdick/onedark.vim'
+Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
@@ -12,8 +12,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
-Plug 'mbbill/undotree'
-Plug 'scrooloose/nerdtree'
+Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'easymotion/vim-easymotion'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'scrooloose/nerdcommenter'
@@ -31,9 +31,10 @@ call plug#end()
 " ----------Vim基本配置---------
 
 " 快捷键前缀，即<Leader>
-let mapleader=";"
+let mapleader = ';'
 " 配色
-colorscheme onedark
+colorschem molokai
+" colorschem onedark
 " 启用语法高亮
 syntax on
 " 支持真彩色
@@ -56,12 +57,12 @@ set ruler
 set wrap
 " 实时搜索
 set incsearch
+" 高亮搜索结果
+set hlsearch
 " 搜索时大小写不敏感
 set ignorecase
 " 有一个大写字母，则切换到大小写敏感查找
 set smartcase
-" 高亮搜索结果
-set hlsearch
 " 删除键绕过行首，行内缩进继续删除
 set backspace=2
 " 将制表符扩展为空格
@@ -79,13 +80,13 @@ set ttimeoutlen=100
 
 " ----------自定义快捷键----------
 
-" 设置快捷键将选中文本块复制至系统剪贴板
+" 将选中文本块复制至系统剪贴板
 vmap <Leader>y "+y
-" 设置快捷键将系统剪贴板内容粘贴至vim
-" nmap <Leader>p "+p
-" 定义快捷键保存当前窗口内容
+" 将系统剪贴板内容粘贴至vim
+nmap <Leader>p "+p
+" 保存当前窗口内容
 nmap <Leader>w :w<CR>
-" 定义快捷键保存所有窗口内容并退出 vim
+" 保存所有窗口内容并退出 vim
 nmap <Leader>W :wq<CR>
 " 退出vim
 nmap <Leader>q :q<CR>
@@ -97,7 +98,8 @@ nmap <Leader>j %
 " ----------airline----------
 
 " 设置airline主题
-let g:airline_theme = 'onedark'
+let g:airline_theme = 'molokai'
+" let g:airline_theme = 'onedark'
 " 路径格式
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 " 设置airline字体
@@ -107,8 +109,8 @@ let g:airline#extensions#tabline#enabled = 1
 " tabline中buffer显示编号
 let g:airline#extensions#tabline#buffer_nr_show = 1
 " 映射切换buffer的键位
-nmap [b :bp<CR>
 nmap ]b :bn<CR>
+nmap [b :bp<CR>
 " 映射<leader>num到num buffer
 map <leader>1 :b 1<CR>
 map <leader>2 :b 2<CR>
