@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="dracula"
+ZSH_THEME='dracula'
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -61,7 +61,7 @@ ZSH_THEME="dracula"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump docker docker-compose docker-machine git mvn zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(autojump docker docker-compose docker-machine encode64 git gradle mvn zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,13 +95,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliases
-alias dl="~/Downloads"
-alias dt="~/Desktop"
-alias gh="~/GitHub"
-alias ip="curl -i http://ip.cn"
-alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
-alias unsetproxy="unset ALL_PROXY"
+alias dl='~/Downloads'
+alias dt='~/Desktop'
+alias gh='~/GitHub'
+alias ip='curl -i http://ip.cn'
+alias setproxy='export ALL_PROXY=socks5://127.0.0.1:1086'
+alias unsetproxy='unset ALL_PROXY'
+alias uuid='echo ${$(uuidgen)//-/''}'
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source ~/.functions
