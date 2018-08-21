@@ -1,9 +1,25 @@
 #!/bin/sh
 
+function nooohooo() {
+    echo 1
+    echo 2
+}
+
+# => common
+
 function execute_count() {
     count=0
 
     while ((count < $1)); do
         eval $2 && ((count = $count + 1))
     done
+}
+
+# => git
+
+function git_reset_tag() {
+    git tag -d $1
+    git push origin :refs/tags/$1
+    git tag $1
+    git push origin $1
 }
