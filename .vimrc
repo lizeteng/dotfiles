@@ -1,4 +1,4 @@
-" --------------- Plugins ---------------
+" =============== Plugins ===============
 
 call plug#begin('~/.vim/plugged')
 
@@ -18,7 +18,7 @@ Plug 'bronson/vim-trailing-whitespace'
 
 call plug#end()
 
-" --------------- General ---------------
+" =============== Basic ===============
 
 set nocompatible
 
@@ -41,7 +41,7 @@ filetype indent on
 
 let g:mapleader = ';'
 
-" --------------- Colors ---------------
+"  => Colors
 
 syntax enable
 
@@ -50,13 +50,13 @@ set background=dark
 
 colorscheme dracula
 
-" --------------- Files ---------------
+" => Files
 
 set noswapfile
 set nobackup
 set nowritebackup
 
-" --------------- Indentation ---------------
+" => Indentation
 
 set autoindent
 set smartindent
@@ -69,24 +69,31 @@ set textwidth=120
 set nowrap
 set linebreak
 
-" --------------- Completion ---------------
+" => Completion
 
 set wildmenu
 
-" --------------- Scroll ---------------
+" => Scroll
 
 set scrolloff=0
 set sidescrolloff=0
 set sidescroll=1
 
-" --------------- Search ---------------
+" => Search
 
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
 
-" --------------- Plugins config ---------------
+" => Mappings
+
+nmap <leader>w :w<cr>
+nmap <leader>WQ :wa<cr>:q<cr>
+nmap <leader>q :q<cr>
+nmap <leader>Q :qa!<cr>
+
+" =============== Plugins config ===============
 
 " => airline
 
