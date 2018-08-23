@@ -1,11 +1,10 @@
 #!/bin/sh
 
 function nooohooo() {
-    echo 1
-    echo 2
+    echo nooohooo
 }
 
-# => common
+# => Basic
 
 function execute_count() {
     count=0
@@ -15,11 +14,17 @@ function execute_count() {
     done
 }
 
-# => git
+# => Git
 
-function git_reset_tag() {
+function git_tag_reset() {
     git tag -d $1
     git push origin :refs/tags/$1
     git tag $1
     git push origin $1
+}
+
+# => Docker
+
+function docker_container_delete_all_exited() {
+    docker rm -v $(docker container ls -aq -f status=exited)
 }
