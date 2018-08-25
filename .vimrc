@@ -11,10 +11,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'mbbill/undotree'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'mattn/emmet-vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -31,7 +35,8 @@ set showmode
 set visualbell
 set t_vb=
 set autoread
-
+set timeoutlen=1000
+set ttimeoutlen=50
 set hidden
 
 syntax on
@@ -147,6 +152,12 @@ nmap <leader>U :UndotreeToggle<cr>
 nmap <leader>u :earlier<cr>
 nmap <leader>r :later<cr>
 
+" => YouCompleteMe
+
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 " => nerdcommenter
 
 let g:NERDSpaceDelims = 1
@@ -154,3 +165,11 @@ let g:NERDSpaceDelims = 1
 " => vim-trailing-whitespace
 
 map <leader><space> :FixWhitespace<cr>
+
+" => emmt-vim
+
+let g:user_emmet_leader_key = '<c-e>'
+
+" => ultisnips
+
+let g:UltiSnipsExpandTrigger = '<leader><tab>'
