@@ -3,6 +3,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -54,6 +55,7 @@ set termguicolors
 set background=dark
 
 colorscheme dracula
+" colorscheme base16-oceanicnext
 
 " => Files
 
