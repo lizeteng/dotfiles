@@ -1,4 +1,3 @@
-
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MAVEN_HOME=/Users/lizeteng/apache/maven/apache-maven-3.5.0
 # export PATH=$PATH:$MAVEN_HOME/bin
@@ -61,9 +60,28 @@ ZSH_THEME='dracula'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump docker docker-compose docker-machine encode64 git gradle mvn zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(
+  autojump
+  docker
+  docker-compose
+  docker-machine
+  encode64
+  git
+  gradle
+  mvn
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
+
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+for file in ~/.{aliases,functions}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
 
 # User configuration
 
@@ -93,18 +111,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# aliases
-alias dl='~/Downloads'
-alias dt='~/Desktop'
-alias gh='~/GitHub'
-alias ip='curl -i http://ip.cn'
-alias setproxy='export ALL_PROXY=socks5://127.0.0.1:1086'
-alias unsetproxy='unset ALL_PROXY'
-alias uuid='echo ${$(uuidgen)//-/''}'
-
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source ~/.functions
