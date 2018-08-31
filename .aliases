@@ -3,7 +3,6 @@
 # => Basic
 
 alias dl='~/Downloads'
-alias dt='~/Desktop'
 alias gh='~/GitHub'
 
 alias uuid='echo ${$(uuidgen)//-/''}'
@@ -22,14 +21,17 @@ alias di='docker images'
 alias dia='docker images -a'
 alias didn='docker_images_delete_none'
 
-alias drd='docker run -d'
-alias drdp='docker run -d -p'
-alias drit='docker run -it'
-
 alias dst='docker start'
 alias dso='docker stop'
 alias dp='docker ps'
 alias dpa='docker ps -a'
 alias dcde='docker_containers_delete_exited'
 
+alias drd='docker run -d'
+alias drdp='docker run -d -p'
+alias drit='docker run -it'
+
 alias deit='docker exec -it'
+
+alias din='docker inspect'
+alias dt='docker tag'
