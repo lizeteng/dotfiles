@@ -30,6 +30,7 @@ alias dcde='docker_containers_delete_exited'
 alias drd='docker run -d'
 alias drdp='docker run -d -p'
 alias drit='docker run -it'
+alias drdit='docker run -d -it'
 
 alias deit='docker exec -it'
 
