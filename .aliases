@@ -5,7 +5,8 @@
 alias dl='~/Downloads'
 alias gh='~/GitHub'
 
-alias uuid='echo ${$(uuidgen)//-/''}'
+alias uuiduc='echo ${$(uuidgen)//-/''}'
+alias uuidlc='uuiduc | tr A-Z a-z'
 
 alias curlip='curl -i http://ip.cn'
 alias setproxy='export ALL_PROXY=socks5://127.0.0.1:1086'
