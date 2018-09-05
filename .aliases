@@ -20,12 +20,15 @@ alias gtr='git_tag_reset'
 
 alias di='docker images'
 alias dia='docker images -a'
+alias drmi='docker rmi'
 alias didn='docker_images_delete_none'
 
 alias dst='docker start'
-alias dso='docker stop'
+alias dsp='docker stop'
+alias drs='docker restart'
 alias dp='docker ps'
 alias dpa='docker ps -a'
+alias drm='docker rm'
 alias dcde='docker_containers_delete_exited'
 
 alias drd='docker run -d'
