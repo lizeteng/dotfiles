@@ -68,7 +68,6 @@ plugins=(
   git
   gradle
   mvn
-  vi-mode
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
