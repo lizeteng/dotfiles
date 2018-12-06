@@ -1,5 +1,4 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export MAVEN_HOME=/Users/lizeteng/apache/maven/apache-maven-3.5.0
 # export PATH=$PATH:$MAVEN_HOME/bin
 
 # Path to your oh-my-zsh installation.
