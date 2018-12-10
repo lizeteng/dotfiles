@@ -2,8 +2,7 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'chriskempson/base16-vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
@@ -52,10 +51,9 @@ let g:mapleader = ';'
 syntax enable
 
 set termguicolors
-set background=dark
+set background=light
 
-colorscheme dracula
-" colorscheme base16-oceanicnext
+colorscheme PaperColor
 
 " => Files
 
