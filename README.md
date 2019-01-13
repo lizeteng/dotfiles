@@ -1,3 +1,3 @@
-# nooohooo's dotfiles
+# lizeteng's dotfiles
 
-nooohooo's dotfiles
+lizeteng's dotfiles
