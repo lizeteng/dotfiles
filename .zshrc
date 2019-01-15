@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 for file in ~/.{aliases,functions}; do
-	[ -r $file ] && [ -f $file ] && source $file;
+  [ -r $file ] && [ -f $file ] && source $file;
 done;
 
 # User configuration
