@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-nooohooo() {
-    echo nooohooo
-}
-
 # => Basic
 
 execute_count() {
