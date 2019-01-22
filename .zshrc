@@ -65,6 +65,7 @@ plugins=(
   docker-machine
   encode64
   git
+  git-open
   gradle
   mvn
   zsh-syntax-highlighting
