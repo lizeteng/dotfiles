@@ -68,6 +68,7 @@ plugins=(
   git-open
   gradle
   mvn
+  z
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
